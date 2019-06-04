@@ -4,9 +4,19 @@
 #include "pch.h"
 #include <iostream>
 
+int sub1(char *par)
+{
+	char buf[16];
+
+	strcpy(buf, par);
+
+	std::cout << buf;
+}
 int main()
 {
     std::cout << "Hello World!\n"; 
+
+	sub1("test strings long long strings ")
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
